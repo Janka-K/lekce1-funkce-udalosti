@@ -15,9 +15,11 @@ function secti(a, b) {
   return c;
 }
 
+let hodnota1 = 8;
+let hodnota2 = 10;
+
 function klik(){
-  element = document.querySelector("#vysledek");
-  element.innerHTML = secti(4,5);
+  element = document.querySelector("#vysledek").innerHTML = secti(hodnota1,hodnota2);
 }
 
 
@@ -27,7 +29,7 @@ function klik(){
 function upozorni() {
   alert("Gratulace, právě jsi spustila tuto funkci!");
   console.log("Gratulace, právě jsi spustila tuto funkci!");
-  element = document.querySelector('div.ctverecek');
+  element = document.querySelector('.ctverecek');
   element.style.lineHeight = '40px';
   element.textContent = 'Gratulace,prave jsi spustila tuto funkci!';
 }
